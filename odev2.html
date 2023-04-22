@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PatikaDEV-Odev2</title>
+    <style>
+      .center {
+        text-align: center;
+      }
+      .gray-area {
+        background-color: lightgray;
+      }
+      
+      .searchbar {
+        width: 300px;
+      }
+
+      .left,
+      .middle,
+      .right {
+        display: inline-block;
+        text-align: center;
+      }
+      
+      .green-area > .middle > ul,
+      .green-area > .left > ul,.green-area > .right > ul {
+        list-style: none;
+      }
+      
+      
+      .left {
+        background-color: lightgreen;
+        height: 100px;
+        width:33% ;
+        float: left;
+      }
+      .middle {
+        background-color: rgb(101, 164, 101);
+        float: left;
+        width:20% ;
+        height: 100px;
+margin-left: 0.2rem;
+margin-right: 0.2rem;
+      }
+      .middle>ul>li{
+        padding-right: 30px;
+      }
+      .right {
+        background-color: rgb(62, 103, 62);
+        float: left;
+        width: 46.31% ;
+        height: 100px;
+      }
+      .clr {
+        clear: both;
+      }
+      #subscribe{
+       margin-right: 7px ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="center">
+        <img
+          src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg"
+          alt="Google-old-logo.png"
+        />
+        <br />
+        <section class="gray-area">
+          <h2>Search the web using Google!</h2>
+          <input type="text" class="searchbar" />
+          <br />
+          <button>Google Search</button>
+          <button>I'm feeling lucky</button>
+        </section>
+      </section>
+      <section class="green-area">
+        <div class="left">
+          <ul>
+            <li>Special Searches</li>
+            <li><a href="#">Stanford Search</a></li>
+            <li><a href="#">Linux Search</a></li>
+          </ul>
+        </div>
+        <div class="middle ">
+          <ul>
+            <li><a href="#">Help!</a></li>
+            <li><a href="#">About Google</a></li>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Google! Logos</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li>Get Google!</li>
+            <li>updates monthly:</li>
+            <li>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="your e-mail"
+              />
+            </li>
+            <li>
+              <button id="subscribe">Subscribe</button> <a href="#">Archive</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="clr center">
+        <p>Copyright &#169;1998 Google Inc.</p>
+      </footer>
+    </div>
+  </body>
+</html>
